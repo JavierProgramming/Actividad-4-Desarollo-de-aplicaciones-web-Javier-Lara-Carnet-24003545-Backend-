@@ -1,0 +1,148 @@
+/* style.css */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f9fc;
+  color: #222;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Contenedor principal */
+.container {
+  width: 100%;
+  max-width: 600px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* Títulos */
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+/* Formulario de tareas */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+  padding: 12px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Botones */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Lista de tareas */
+ul.task-list {
+  list-style: none;
+}
+
+ul.task-list li {
+  background-color: #f1f5f9;
+  border-radius: 6px;
+  padding: 15px 20px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Descripción y fecha */
+.task-info {
+  max-width: 80%;
+}
+
+.task-name {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-bottom: 4px;
+}
+
+.task-desc {
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 3px;
+}
+
+.task-due-date {
+  font-size: 0.85em;
+  font-style: italic;
+  color: #888;
+}
+
+/* Botón eliminar */
+button.delete-btn {
+  background-color: #dc3545;
+  padding: 8px 12px;
+  font-size: 0.9em;
+}
+
+button.delete-btn:hover {
+  background-color: #a71d2a;
+}
+
+/* Mensajes de estado */
+.message {
+  padding: 12px;
+  margin-bottom: 25px;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.message.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
